@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,li{
+  list-style: none;
+}
+
+.navbar{
+  width:100vw;
+  height:2vw;
+  background:#313132;
+  margin:0 auto;
+}
+
+.nav{
+  width:80vw;
+  display:flex;
+  background:green;
+  
+}
