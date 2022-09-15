@@ -1,6 +1,10 @@
+import Storelist from '../components/StoreIist'
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <Storelist />
+    </div>
   )
 }
 export default Home

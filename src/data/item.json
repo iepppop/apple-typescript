@@ -1,0 +1,38 @@
+[
+    {
+        "id" : 1,
+        "name": "AirPods",
+        "sub" : "2세대",
+        "new" : false,
+        "price" : "199000",
+        "img" : "airpod.jpg",
+        "prev" : "airpod-preview.png"
+    },
+    {
+        "id" : 2,
+        "name": "AirPods",
+        "sub" : "3세대",
+        "new" : false,
+        "price" : "259000",
+        "img" : "airpod3.jpg",
+        "prev" : "airpod-preview2.png"
+    },
+    {
+        "id" : 3,
+        "name": "AirPods Pro",
+        "sub" : "2세대",
+        "new" : true,
+        "price" : "359000",
+        "img" : "airpodpro2.jpg",
+        "prev" : "airpodpro-preview.png"
+    },
+    {
+        "id" : 4,
+        "name": "AirPods Max",
+        "sub" : null,
+        "new" : false,
+        "price" : "769000",
+        "img" : "airmax.jpg",
+        "prev" : "airmax-preview.png"
+    }
+]
