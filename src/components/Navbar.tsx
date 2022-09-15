@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
         <ul className="nav">
-            <li></li>
+            <li><div className="logo"></div></li>
             <li>스토어</li>
             <li>Mac</li>
             <li>iPad</li>
