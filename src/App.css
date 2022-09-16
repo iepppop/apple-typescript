@@ -143,6 +143,10 @@ ul,li{
 
 .product .product-w .product-wrap .product-img{
   width:65%;
+  padding: 0 0 0 5rem;
+}
+
+.product .product-w .product-wrap .product-img img{
 }
 
 .product .product-w .product-wrap .product-text{
@@ -256,4 +260,27 @@ ul,li{
 
 .product-id button:hover {
   opacity: 0.9;
+}
+
+.product-id .bookmark {
+  display: grid;
+  grid-template-columns:8fr 2fr;
+  margin:40px 0 10px 0;
+}
+
+.product-id .bookmark-text h4 {
+  font-size: .9rem;
+}
+
+.product-id .bookmark-text h2 {
+  font-size: .9rem;
+  padding:0;
+  margin:10px 0 0 0;
+}
+
+.product-id .bookmark-icon{
+  display:flex;
+  align-items: start;
+  justify-content: center;
+  color:#0071e3;
 }

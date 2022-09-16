@@ -54,6 +54,24 @@ const ProductId = ({ id, img, prev, name, price }: ProductId) => {
       <button type="button">
         장바구니에 담기
       </button>
+      <div className="bookmark">
+        <div className="bookmark-text">
+         <h4>아직 고민 중이신가요?</h4> 
+         <h2>이 항목을 목록에 추가해두었다가 나중에 다시 살펴보세요.</h2>
+          </div>
+          <div className="bookmark-icon">
+          <i className="fa-regular fa-bookmark"></i>
+          </div>
+      </div>
+      <span />
+      <div className="help">
+        <div className="help-icon">
+
+        </div>
+        <div className="help-text">
+        제품 구입에 필요한 도움을 받아보세요. 지금 채팅하기 서비스를 이용하거나 080-330-8877에 전화로 문의하세요.
+        </div>
+      </div>
     </div>
   );
 };
