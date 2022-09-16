@@ -66,10 +66,10 @@ const ProductId = ({ id, img, prev, name, price }: ProductId) => {
       <span />
       <div className="help">
         <div className="help-icon">
-
+        <i className="fa-regular fa-comments"></i>
         </div>
         <div className="help-text">
-        제품 구입에 필요한 도움을 받아보세요. 지금 채팅하기 서비스를 이용하거나 080-330-8877에 전화로 문의하세요.
+        제품 구입에 필요한 도움을 받아보세요. <h3>지금 채팅하기</h3> 서비스를 이용하거나 080-330-8877에 전화로 문의하세요.
         </div>
       </div>
     </div>
