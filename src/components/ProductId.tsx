@@ -1,3 +1,6 @@
+import { useShoppingCart } from "../context/CartContext";
+import { Link } from 'react-router-dom'
+
 type ProductIdProps = {
   id: number
   name: string
@@ -14,6 +17,9 @@ const formatCurrency = (number: number) => {
 };
 
 const ProductId = ({ id, name, price }: ProductIdProps) => {
+  const { increaseQuantity } = useShoppingCart()
+  const quantity = 0
+
   return (
     <div className="product-id" key={id}>
       <h1>{name}</h1>
@@ -49,9 +55,11 @@ const ProductId = ({ id, name, price }: ProductIdProps) => {
           </span>
         </h4>
       </div>
+      <Link to="/cart">
       <button type="button">
         장바구니에 담기
       </button>
+      </Link>
       <div className="bookmark">
         <div className="bookmark-text">
          <h4>아직 고민 중이신가요?</h4> 

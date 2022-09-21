@@ -20,7 +20,7 @@ const Product = () => {
   },[])
 
   let { id }  = useParams()
-  const products = datas.filter((list)=> list.name == id);
+  const products = datas.filter((list)=> list.product == id);
 
   return (
     <div className="product">

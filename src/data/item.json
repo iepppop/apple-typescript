@@ -6,16 +6,18 @@
         "new" : false,
         "price" : "199000",
         "img" : "airpod.jpg",
-        "prev" : "airpod-preview.png"
+        "prev" : "airpod-preview.png",
+        "product" : "airpods2"
     },
     {
         "id" : 2,
-        "name": "AirPods",
+        "name": "AirPods3",
         "sub" : "3세대",
         "new" : false,
         "price" : "259000",
         "img" : "airpod3.jpg",
-        "prev" : "airpod-preview2.png"
+        "prev" : "airpod-preview2.png",
+        "product" : "airpods3"
     },
     {
         "id" : 3,
@@ -24,7 +26,8 @@
         "new" : true,
         "price" : "359000",
         "img" : "airpodpro2.jpg",
-        "prev" : "airpodpro-preview.png"
+        "prev" : "airpodpro-preview.png",
+        "product" : "airpods-pro"
     },
     {
         "id" : 4,
@@ -33,6 +36,7 @@
         "new" : false,
         "price" : "769000",
         "img" : "airmax.jpg",
-        "prev" : "airmax-preview.png"
+        "prev" : "airmax-preview.png",
+        "product" : "airpods-max"
     }
 ]

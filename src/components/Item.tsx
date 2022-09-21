@@ -6,6 +6,7 @@ type ItemProps = {
   price: number
   sub: string
   prev: string
+  product: string
 };
 
 const CURRENCY_FORMATTER = new Intl.NumberFormat(undefined, {
@@ -17,7 +18,7 @@ const formatCurrency = (number: number) => {
   return CURRENCY_FORMATTER.format(number);
 };
 
-const Item = ({ id, name, price, sub, prev }: ItemProps) => {
+const Item = ({ id, name, price, sub, prev, product }: ItemProps) => {
   return (
     <li>
       <div className="img-wrap">
@@ -31,7 +32,7 @@ const Item = ({ id, name, price, sub, prev }: ItemProps) => {
           <h3>{sub}</h3>
         )}
         <h4>{formatCurrency(price)}</h4>
-        <Link to={`/product/${name}`}>
+        <Link to={`/product/${product}`}>
         <button type="button">구입하기</button>
         </Link>
       </div>
