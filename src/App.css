@@ -372,14 +372,17 @@ ul,li{
 .cart .cart-title-two {
   display:grid;
   grid-template-columns: 1fr 23fr;
-  padding:30px 0;
   height: 9rem;
   border-top: 1px solid #eee;
+  position:relative;
+  align-items:center;
 }
 
 .cart .cart-title-two i{
   color:red;
-  padding:0 0 0 5px
+  padding:0 0 0 5px;
+  position:sticky;
+  top:0;
 }
 
 .cart .cart-title-two .cart-applecare h1{

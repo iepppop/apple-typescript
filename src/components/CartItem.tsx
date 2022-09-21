@@ -27,10 +27,16 @@ const CartItem = ({ id, quantity }: CartItemProps) => {
         <h2 style={{ color:"#0071e3"}}>더 알아보기</h2>
        </div>
        </div>
-       <div className="cart-title-two">
-       <i className="fa-brands fa-apple"></i>
+       <div className="cart-title-two" style={{height: "5rem"}}>
+       <i className="fa-solid fa-check" style={{color:"#000"}}></i>
        <div className="cart-applecare">
         <h1>무료 각인도 추가하세요</h1>
+       </div>
+       </div>
+       <div className="cart-title-two">
+       <i className="fa-solid fa-gift" style={{color:"#000"}}></i>
+       <div className="cart-applecare">
+        <h1>선물 메시지 또는 선물 포장 추가</h1>
        </div>
        </div>
       </div>
