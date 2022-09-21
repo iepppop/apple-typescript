@@ -19,6 +19,29 @@ const Cart = () => {
             <CartItem key={item.id} {...item} />
           ))}
         </ul>
+        <div className="cart-total-amount">
+          <div className="cart-gap"></div>
+          <div className="cart-amount">
+            <div className="cart-line">
+              <span>소계</span>
+              <span>50000</span>
+            </div>
+            <div className="cart-line">
+              <span>배송</span>
+              <span>무료</span>
+            </div>
+            <div className="cart-sum">
+              <div className="cart-line">
+                <span>총계</span>
+                <span>
+                  <h1>ddd</h1>
+                  <h1>ddd</h1>
+                  <h1>ddd</h1>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

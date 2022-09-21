@@ -336,6 +336,7 @@ ul,li{
   border-top: 1px solid #eee;
   display: grid;
   grid-template-columns: 2fr 8fr;
+  padding:0 0 80px 0;
 }
 
 .cart .cart-img-wrap{
@@ -374,18 +375,22 @@ ul,li{
   grid-template-columns: 1fr 23fr;
   height: 9rem;
   border-top: 1px solid #eee;
-  position:relative;
   align-items:center;
+  position: relative;
+}
+
+.cart .cart-title-two .cart-i{
+  color:red;
+  padding:0 0 0 5px;
+  height:50%;
 }
 
 .cart .cart-title-two i{
   color:red;
-  padding:0 0 0 5px;
-  position:sticky;
-  top:0;
+  padding:0 0 4px 0;
 }
 
-.cart .cart-title-two .cart-applecare h1{
+.cart .cart-title-two .cart-applecare h1, .cart-store h1{
   font-size: 1rem; 
   margin:0;
   padding:0;
@@ -397,4 +402,43 @@ ul,li{
   margin:0;
   padding:8px 0 0 0;
   opacity:0.9;
+}
+
+.cart .cart-title-two .cart-delievery {
+  position: absolute;
+  display:flex;
+}
+
+.cart .cart-title-two .cart-delievery span{
+  color: #0071e3;
+  font-weight: 500;
+  margin:0 0 0 5px;
+  display: flex;
+  align-items: center;
+}
+
+.cart .cart-title-two .cart-store h1 {
+  margin:60px 0 0 0;
+  width:100%;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.cart .cart-total-amount{
+  border-top: 1px solid #eee;
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+}
+
+.cart .cart-total-amount .cart-amount{
+  text-align:left;
+}
+
+.cart .cart-total-amount .cart-amount .cart-line{
+  display: flex;
+  justify-content:space-between;
+}
+
+.cart .cart-total-amount .cart-amount .cart-sum{
+  border-top: 1px solid #eee;
 }
