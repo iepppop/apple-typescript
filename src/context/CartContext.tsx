@@ -1,8 +1,7 @@
 import { createContext, useContext, ReactNode } from 'react'
-import storelist from '../data/item.json'
 
 type ShoppingCartContext = { 
-
+    increaseQuantity: (id: number) => void;
 }
 
 type ShoppingCartProvider = { 
@@ -16,9 +15,14 @@ export const useShoppingCart = () => {
 }
 
 export const ShoppingCartProvider = ({ children } : ShoppingCartProvider)  => {
-    const data = storelist
+    // const [ items, setItems ] = useState[]
+    
+    const increaseQuantity = (id:number) => {
+
+    }
+    
     return(
-        <CartContext.Provider value={{ data }}>
+        <CartContext.Provider value={{ increaseQuantity }}>
             {children}
         </CartContext.Provider>
     )

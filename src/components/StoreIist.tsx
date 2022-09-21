@@ -10,7 +10,7 @@ const StoreIist = () => {
       <ul>
         {datas.map(data=>{
             return (
-                <Item key={data.name} {...data} />
+                <Item key={data.id} {...data} />
             )
         })}
       </ul>

@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 
-type StoreItemProps = {
-  name: string;
-  id: number;
-  price: number;
-  prev: string;
-  sub: string;
+type ItemProps = {
+  id: number
+  name: string
+  price: number
+  sub: string
+  prev: string
 };
 
 const CURRENCY_FORMATTER = new Intl.NumberFormat(undefined, {
@@ -17,7 +17,7 @@ const formatCurrency = (number: number) => {
   return CURRENCY_FORMATTER.format(number);
 };
 
-const Item = ({ id, name, price, sub, prev }: StoreItemProps) => {
+const Item = ({ id, name, price, sub, prev }: ItemProps) => {
   return (
     <li>
       <div className="img-wrap">
@@ -31,7 +31,7 @@ const Item = ({ id, name, price, sub, prev }: StoreItemProps) => {
           <h3>{sub}</h3>
         )}
         <h4>{formatCurrency(price)}</h4>
-        <Link to={`/product/${id}`}>
+        <Link to={`/product/${name}`}>
         <button type="button">구입하기</button>
         </Link>
       </div>

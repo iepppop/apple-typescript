@@ -1,9 +1,7 @@
-type ProductId = {
-  img: string;
-  prev: string;
-  name: string;
-  id: number;
-  price: number;
+type ProductIdProps = {
+  id: number
+  name: string
+  price: number
 };
 
 const CURRENCY_FORMATTER = new Intl.NumberFormat(undefined, {
@@ -15,7 +13,7 @@ const formatCurrency = (number: number) => {
   return CURRENCY_FORMATTER.format(number);
 };
 
-const ProductId = ({ id, img, prev, name, price }: ProductId) => {
+const ProductId = ({ id, name, price }: ProductIdProps) => {
   return (
     <div className="product-id" key={id}>
       <h1>{name}</h1>
