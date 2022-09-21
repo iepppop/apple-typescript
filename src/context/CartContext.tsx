@@ -1,17 +1,18 @@
 import { createContext, useContext, ReactNode, useState } from "react";
 
-type ShoppingCartContext = {
-  increaseQuantity: (id: number) => void;
-};
-
-type ShoppingCartProvider = {
-  children: ReactNode;
-};
-
 type CartItem = {
   id: number;
   name: string;
   quantity: number;
+};
+
+type ShoppingCartContext = {
+  increaseQuantity: (id: number) => void;
+  items: CartItem[]
+};
+
+type ShoppingCartProvider = {
+  children: ReactNode;
 };
 
 export const CartContext = createContext({} as ShoppingCartContext);
@@ -40,7 +41,7 @@ export const ShoppingCartProvider = ({ children }: ShoppingCartProvider) => {
   };
 
   return (
-    <CartContext.Provider value={{ increaseQuantity }}>
+    <CartContext.Provider value={{ increaseQuantity, items }}>
       {children}
     </CartContext.Provider>
   );

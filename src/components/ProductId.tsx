@@ -56,7 +56,7 @@ const ProductId = ({ id, name, price }: ProductIdProps) => {
         </h4>
       </div>
       <Link to="/cart">
-      <button type="button">
+      <button type="button" onClick={()=>increaseQuantity(id)}>
         장바구니에 담기
       </button>
       </Link>

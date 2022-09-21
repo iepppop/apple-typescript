@@ -1,8 +1,11 @@
+
+import { Link } from 'react-router-dom'
+
 const Navbar = () => {
   return (
     <div className="navbar">
         <ul className="nav">
-            <li><i className="fa-brands fa-apple"></i></li>
+            <li><Link to="/"><i className="fa-brands fa-apple"></i></Link></li>
             <li>스토어</li>
             <li>Mac</li>
             <li>iPad</li>
