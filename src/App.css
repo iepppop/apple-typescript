@@ -439,6 +439,26 @@ ul,li{
   justify-content:space-between;
 }
 
+.cart .cart-total-amount .cart-amount .cart-line span{
+  padding:5px 0;
+  font-weight: 500;
+}
+
 .cart .cart-total-amount .cart-amount .cart-sum{
   border-top: 1px solid #eee;
+  text-align: right;
+}
+
+.cart .cart-total-amount .cart-amount .cart-sum span{
+  padding:20px 0;
+}
+
+.cart .cart-total-amount .cart-amount .cart-sum .cart-line .cart-card{
+  padding:20px 0;
+}
+
+.cart .cart-total-amount .cart-amount .cart-sum .cart-line .cart-card h5{
+  color:#0071e3;
+  font-weight:500;
+  margin:5px 0 0 0;
 }

@@ -22,6 +22,7 @@ const Cart = () => {
         <div className="cart-total-amount">
           <div className="cart-gap"></div>
           <div className="cart-amount">
+            <div style={{padding:"20px 0"}}>
             <div className="cart-line">
               <span>소계</span>
               <span>50000</span>
@@ -30,14 +31,14 @@ const Cart = () => {
               <span>배송</span>
               <span>무료</span>
             </div>
+            </div>
             <div className="cart-sum">
               <div className="cart-line">
-                <span>총계</span>
-                <span>
-                  <h1>ddd</h1>
-                  <h1>ddd</h1>
-                  <h1>ddd</h1>
-                </span>
+                <span style={{fontWeight:"900", fontSize:"1.4rem"}}>총계</span>
+                <div className="cart-card">
+                  <span style={{fontWeight:"900", fontSize:"1.4rem"}}>78000</span>
+                  <h5>최대 12개월 신용 카드 할부</h5>
+                </div>
               </div>
             </div>
           </div>
