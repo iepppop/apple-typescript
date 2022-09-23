@@ -40,8 +40,18 @@ export const ShoppingCartProvider = ({ children }: ShoppingCartProvider) => {
     });
   };
 
+  const CURRENCY_FORMATTER = new Intl.NumberFormat(undefined, {
+    currency: "KRW",
+    style: "currency",
+  });
+  
+  const formatCurrency = (number: number) => {
+    return CURRENCY_FORMATTER.format(number);
+  };
+  
+
   return (
-    <CartContext.Provider value={{ increaseQuantity, items }}>
+    <CartContext.Provider value={{ increaseQuantity, items, formatCurrency }}>
       {children}
     </CartContext.Provider>
   );

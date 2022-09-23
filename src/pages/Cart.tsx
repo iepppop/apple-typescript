@@ -6,7 +6,7 @@ type ShoppingCartProps = {
 };
 
 const Cart = () => {
-  const { items } = useShoppingCart();
+  const { items, formatCurrency } = useShoppingCart();
   return (
     <div className="cart-wrap ">
       <div className="cart">
@@ -36,7 +36,7 @@ const Cart = () => {
               <div className="cart-line">
                 <span style={{fontWeight:"900", fontSize:"1.4rem"}}>총계</span>
                 <div className="cart-card">
-                  <span style={{fontWeight:"900", fontSize:"1.4rem"}}>78000</span>
+                  <span style={{fontWeight:"900", fontSize:"1.4rem"}}>{formatCurrency(78000)}</span>
                   <h5>최대 12개월 신용 카드 할부</h5>
                 </div>
               </div>
